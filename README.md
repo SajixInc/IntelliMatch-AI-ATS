@@ -1,9 +1,5 @@
 # IntelliMatch-AI-ATS: The Ultimate ATS Companion
-IntelliMatch AI-ATS: Application tracking system which helps aligning resume with job description and the keywords with the help LLM . i,e. Gemini. and LLAMA2 and many more.
-
-
-
-https://docs.google.com/document/d/1kbT5vF49cvG-unjIMmO7R-HpzG67aNiH3b_1ah7GItU/edit?addon_store
+IntelliMatch AI-ATS: Application tracking system which helps aligning resume with the job description and the keywords with the help of Google Gemini Pro LLM.
 
 IntelliMatch-AI-ATS is a state-of-the-art Streamlit application designed to empower job seekers in conquering Applicant Tracking Systems (ATS) with unmatched precision and insight. This README provides comprehensive guidance on setting up and utilizing IntelliMatch-AI-ATS to enhance your job application process.
 

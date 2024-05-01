@@ -36,8 +36,8 @@ To install IntelliMatch-AI-ATS, follow these steps:
 1. Clone the IntelliMatch-AI-ATS repository to your local machine:
 
     ```bash
-    git clone https://github.com/vivifyhealthcare/IntelliMatch-AI-ATS-Private
-    cd IntelliMatch-AI-ATS-Private
+    git clone https://github.com/vivifyhealthcare/IntelliMatch-AI-ATS
+    cd IntelliMatch-AI-ATS
     ```
 
 2. Set up a Python virtual environment (recommended):
@@ -75,9 +75,9 @@ streamlit run app.py
 
 IntelliMatch-AI-ATS facilitates a variety of functionalities tailored to enhance your resume and prepare you for job applications:
 
-- **Resume Analysis**: Upload your resume and paste the job description to receive detailed feedback on how well your resume matches the job requirements.
+- **Resume MAtch Percentage**: Upload your resume and paste the job description to receive detailed feedback on how well your resume matches the job requirements.
 
-- **Match Percentage**: Get a quantifiable match percentage indicating how closely your resume aligns with the job description, along with matched and missing keywords.
+- **Missing Keywords**: Get a quantifiable match percentage indicating how closely your resume aligns with the job description, along with matched and missing keywords.
 
 - **Skills Improvement**: Receive suggestions on skills to improve or acquire based on the job description and your current resume.
 

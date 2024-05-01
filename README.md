@@ -20,15 +20,14 @@ IntelliMatch-AI-ATS is a state-of-the-art Streamlit application designed to empo
 Before you begin with IntelliMatch-AI-ATS, ensure you have the following prerequisites on your system:
 
 - Python 3.7 or higher
-- An active Google Cloud account with access to the Generative AI services
-- Streamlit installed and configured
+- An active Google Gemini Pro API Key
+- Streamlit python package installed and configured
 - The following Python packages (installable via pip):
     - `streamlit`
     - `PyPDF2` - for processing PDF files
     - `Pillow` - for image processing
     - `python-dotenv` - for environment variable management
     - `pybase64` - for encoding images in base64 format
-    - Google Generative AI SDK
 
 ## Installation
 

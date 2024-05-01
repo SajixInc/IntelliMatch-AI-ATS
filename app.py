@@ -16,23 +16,6 @@ from database import x
 
 load_dotenv()
 
-
-
-username = x['default']
-try:
-    y=x['default']['CLIENT']
-    myclient = pymongo.MongoClient(f"mongodb://{username['CLIENT']['username']}:{username['CLIENT']['password']}@{username['CLIENT']['host']}:27017/")
-    print(myclient)
-    
-except:
-    myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-    print(myclient)
-    
-
-mydb = myclient["lifeeazydb_prod"]
-collection = mydb["collect_job_role"]
-
-
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def get_gemini_response(input):
@@ -58,9 +41,7 @@ st.title("ATSPro: The ATS-Conquering Companion")
 st.subheader("Cross the ATS Hurdle: Unlock Your Career Potential with Precision and Insight")
 
 
-
 #Set BAckground Image
-
 def set_bg_image(image_file):
     with open(image_file, "rb") as file:
         # Use base64 to encode the image file
@@ -81,47 +62,12 @@ def set_bg_image(image_file):
 
 set_bg_image("background.JPG")
 
-
-
+#App Code
 st.write("""_**ATSPro**_ is your strategic ally in mastering the **Applicant Tracking System (ATS)** challenge, powered by the advanced capabilities of _**Google Gemini Pro**_. This ATS Expert System is crafted to refine and align your resume with precision, ensuring it resonates with both the ATS algorithms and human recruiters' expectations.
 
 Through a deep analysis of your resume against specific job descriptions, _**ATSPro**_ identifies key areas for enhancement, from keyword optimization to structural improvements, making your application ATS-friendly. Our unique feature set also includes generating custom interview questions and answers, tailored to your resume and the job you're targeting, ensuring you're well-prepared for both technical and HR evaluations.""")
 
 st.write("**Note:** _**ATSPro**_ can make mistakes. Consider checking important information.")
-
-# Role input
-
-role = st.text_input("**What's the Job Role?**")
-
-if role != '':
-    st.write(f":black[You entered **{role}** as your role.]")
-    # Save the job role to the MongoDB collection
-    job_role_data = {'role_name': role}
-    collection.insert_one(job_role_data)
-    st.success(f"Job Role '{role}' saved successfully!")
-# else:
-#     st.write("Enter a Job Role")
-
-
-
-    
-# role = st.text_input("**What's the Job Role?**", 'Machine Learning Engineer')
-
-# if role != '':
-#     st.write(f":black[You entered **{role}** as your role.]")
-# else:
-#     st.write("Enter a Job Role")
-
-# # When the user clicks the button to save the job role
-# if st.button("Save Job Role"):
-#     # Save the job role to the MongoDB collection
-#     job_role_data = {'role_name': role}
-#     collection.insert_one(job_role_data)
-#     st.success(f"Job Role '{role}' saved successfully!")
-
-# Close MongoDB client connection
-# client.close()
-
 
 # Initialize session state variables for button clicks
 if 'submit1_clicked' not in st.session_state:
@@ -151,6 +97,8 @@ def on_submit4_clicked():
 def on_submit5_clicked():
     st.session_state['submit5_clicked'] = True
 
+# Role input
+role = st.text_input("**What's the Job Role?**")
 # Job description and resume upload
 jd = st.text_area("**Paste the Job Description**")
 uploaded_file = st.file_uploader("**Upload Your Resume**", type="pdf", help="Please upload a pdf")

@@ -3,6 +3,9 @@ IntelliMatch AI-ATS: Application tracking system which helps aligning resume wit
 
 IntelliMatch-AI-ATS is a state-of-the-art Streamlit application designed to empower job seekers in conquering Applicant Tracking Systems (ATS) with unmatched precision and insight. This README provides comprehensive guidance on setting up and utilizing IntelliMatch-AI-ATS to enhance your job application process.
 
+![image](https://github.com/vivifyhealthcare/IntelliMatch-AI-ATS-Private/assets/91713140/b0c0b49c-c36e-4da9-a2fd-d997e2f1cf84)
+
+
 ## Table of Contents
 
 - [Introduction](#atspro-the-ultimate-ats-companion)
@@ -94,6 +97,11 @@ IntelliMatch-AI-ATS facilitates a variety of functionalities tailored to enhance
 - **Dynamic Content Generation**: Generates custom content such as interview prep questions and resume customization tips using advanced AI models.
 
 - **Visual Customizations**: Supports background image customization and CSS styling for a personalized user experience.
+
+---
+# Email Subscription
+![image](https://github.com/vivifyhealthcare/IntelliMatch-AI-ATS-Private/assets/91713140/78266dc2-c7e3-44da-ac4f-b0d7fe38581c)
+
 
 ## Contributing
 

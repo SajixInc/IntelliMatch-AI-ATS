@@ -15,6 +15,7 @@ IntelliMatch-AI-ATS is a state-of-the-art Streamlit application designed to empo
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Features](#features)
+- [Email Subscription](#Email-Subscription)
 - [Contributing](#contributing)
 - [License](#license)
 

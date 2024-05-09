@@ -102,6 +102,25 @@ IntelliMatch-AI-ATS facilitates a variety of functionalities tailored to enhance
 # Email Subscription
 ![image](https://github.com/vivifyhealthcare/IntelliMatch-AI-ATS-Private/assets/91713140/78266dc2-c7e3-44da-ac4f-b0d7fe38581c)
 
+## Features
+- **Subscription**: Users can subscribe using their email address to receive notifications.
+- **Login**: Existing users can log into the system by providing their credentials.
+
+## Installation
+
+To run this application, run the `main.py` file and install the required Python packages.
+
+```bash
+pip install streamlit requests
+```
+After installation, you can start ATSPro by running the Streamlit application:
+
+```bash
+streamlit run app.py
+```
+## Subscribing
+- Enter your email in the 'Enter Your Email' input box id it's your first time accessing IntelliMatch-AI-ATS.
+- Click the 'Subscribe' button to subscribe and an email will be sent with signup and otp subscription.
 
 ## Contributing
 

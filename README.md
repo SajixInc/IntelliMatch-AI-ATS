@@ -155,11 +155,13 @@ To ensure the email subscription feature works correctly, install the required p
 
 ``` python
 pip install streamlit requests
+
 ```
 
 After installation, you can start the IntelliMatch-AI-ATS application by running:
 ``` python
 streamlit run app.py
+
 ```
 
 This will launch the application in your web browser, where you can interact with the email subscription feature and other functionalities provided by IntelliMatch-AI-ATS.

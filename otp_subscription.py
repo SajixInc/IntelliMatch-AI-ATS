@@ -90,7 +90,8 @@ if st.session_state.login == False:
                     st.error("Please enter OTP.")
     else:
         st.success("You are already logged in.")
-else:
+    
+else: #Loggedin successfully
     load_dotenv()
 
     username = x['default']

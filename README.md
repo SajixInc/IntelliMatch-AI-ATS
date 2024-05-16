@@ -123,6 +123,47 @@ streamlit run app.py
 - Enter your email in the 'Enter Your Email' input box id it's your first time accessing IntelliMatch-AI-ATS.
 - Click the 'Subscribe' button to subscribe and an email will be sent with signup and otp subscription.
 
+
+---
+# OTP Subscription
+![image](https://github.com/vivifyhealthcare/IntelliMatch-AI-ATS/assets/91713140/590b5c3a-9442-4b92-9efc-cb648f9774ad)
+
+The IntelliMatch-AI-ATS includes an email subscription feature that allows users to receive updates and notifications via email. This feature requires users to subscribe with their email address, verify their identity through an OTP (One-Time Password), and log in to access personalized content.
+
+## Subscribing and OTP Verification
+To subscribe to IntelliMatch-AI-ATS:
+
+1. **Enter Your Email:** Go to the subscription section in the application and enter your email in the provided text input box.
+2. **Subscribe:** Click the 'Subscribe' button. This will trigger the system to send an OTP to your email as part of the subscription confirmation process.
+3. **Enter OTP:** Once you receive the OTP via email, enter it in the OTP input box.
+4. **Verify OTP:** Click the 'Login' button after entering the OTP to complete the verification process.
+If the OTP is correct, you will be logged in to the system. If the OTP is incorrect, you will have the option to resend a new OTP or try again.
+
+## Email and OTP Handling
+The application handles the email and OTP processes using the following endpoints:
+- Subscription Endpoint: `http://45.79.121.132:8001/SubscribeAndFeedback/Otpgenerate/`
+- OTP Verification Endpoint: `http://45.79.121.132:8001/SubscribeAndFeedback/OtpVerfication/`
+These endpoints are integrated into the Streamlit UI, making the process seamless for the user.
+
+## Error Handling
+
+- **Subscription Errors:** If there is an issue with the subscription request, the application will inform the user to try subscribing again.
+- **OTP Errors:** If the entered OTP is incorrect, the user will receive an error message and have the option to enter the OTP again or request a new one.
+
+## Installation
+To ensure the email subscription feature works correctly, install the required packages:
+
+``` bash
+pip install streamlit requests
+```
+
+After installation, you can start the IntelliMatch-AI-ATS application by running:
+``` bash
+streamlit run app.py
+```
+
+This will launch the application in your web browser, where you can interact with the email subscription feature and other functionalities provided by IntelliMatch-AI-ATS.
+
 ## Contributing
 
 Contributions to IntelliMatch-AI-ATS are welcome! If you'd like to contribute, please follow these steps:

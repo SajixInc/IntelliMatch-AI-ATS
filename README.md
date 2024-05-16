@@ -153,13 +153,13 @@ These endpoints are integrated into the Streamlit UI, making the process seamles
 ## Installation
 To ensure the email subscription feature works correctly, install the required packages:
 
-``` python
+``` Python code
 pip install streamlit requests
 
 ```
 
 After installation, you can start the IntelliMatch-AI-ATS application by running:
-``` python
+``` Python code
 streamlit run app.py
 
 ```

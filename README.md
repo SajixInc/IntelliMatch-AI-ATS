@@ -17,7 +17,7 @@ IntelliMatch-AI-ATS is a state-of-the-art Streamlit application designed to empo
 - [Features](#features)
 - [Email Subscription](#Email-Subscription)
 - [OTP Subscription](#otp-subscription)
-- [Email Subscription & Login](#email-subscription-login)
+- [Email Login](#email-login)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -169,7 +169,7 @@ streamlit run app.py
 This will launch the application in your web browser, where you can interact with the email subscription feature and other functionalities provided by IntelliMatch-AI-ATS.
 
 --- 
-# Email Subscription & Login
+# Email Login
 ![IntelliMatch-AI-ATS Email Login](https://github.com/vivifyhealthcare/IntelliMatch-AI-ATS/assets/91713140/d65f068c-aa2a-4af8-9d67-a686877741f0)
 
 IntelliMatch-AI-ATS offers a robust email subscription feature, allowing users to access personalized updates and notifications after verifying their email through an OTP (One-Time Password) system. This document provides instructions on how to subscribe, verify OTP, and handle potential errors.

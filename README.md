@@ -170,6 +170,42 @@ This will launch the application in your web browser, where you can interact wit
 # Email Subscription & Login
 ![IntelliMatch-AI-ATS Email Login](https://github.com/vivifyhealthcare/IntelliMatch-AI-ATS/assets/91713140/d65f068c-aa2a-4af8-9d67-a686877741f0)
 
+IntelliMatch-AI-ATS offers a robust email subscription feature, allowing users to access personalized updates and notifications after verifying their email through an OTP (One-Time Password) system. This document provides instructions on how to subscribe, verify OTP, and handle potential errors.
+
+## Features
+
+### Subscribing and OTP Verification
+To use the IntelliMatch-AI-ATS service, follow these steps:
+1. **Enter Your Email**: Navigate to the subscription section and input your email in the provided field.
+2. **Subscribe**: Click the 'Subscribe' button to send an OTP to your email, initiating the verification process.
+3. **Enter OTP**: After receiving your OTP via email, enter it in the designated input box on the application.
+4. **Verify OTP**: Press the 'Login' button after inputting the OTP. Successful verification will log you into the system, while an incorrect OTP will give you the option to retry or resend a new OTP.
+
+### Email and OTP Handling
+The system uses the following endpoints to manage email subscriptions and OTP verification:
+- **Subscription Endpoint**: `http://45.79.121.132:8001/SubscribeAndFeedback/Otpgenerate/`
+- **OTP Verification Endpoint**: `http://45.79.121.132:8001/SubscribeAndFeedback/OtpVerfication/`
+
+These endpoints integrate seamlessly into the Streamlit UI, ensuring a smooth user experience.
+
+## Error Handling
+- **Subscription Errors**: Should any issues arise during subscription, the application advises the user to attempt subscribing again.
+- **OTP Errors**: If an entered OTP is incorrect, an error message will appear with options to either retry entering the OTP or request a new one.
+
+## Installation
+Ensure you have the necessary packages installed to operate the subscription feature:
+
+```bash
+pip install streamlit requests
+```
+## Running the Application
+Launch IntelliMatch-AI-ATS by executing:
+
+``` bash
+streamlit run app.py
+```
+This command starts the application in your web browser, allowing you to interact with the email subscription service and explore other functionalities of IntelliMatch-AI-ATS.
+
 
 ## Contributing
 

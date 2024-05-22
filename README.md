@@ -166,6 +166,11 @@ streamlit run app.py
 
 This will launch the application in your web browser, where you can interact with the email subscription feature and other functionalities provided by IntelliMatch-AI-ATS.
 
+--- 
+# Email Subscription & Login
+![IntelliMatch-AI-ATS Email Login](https://github.com/vivifyhealthcare/IntelliMatch-AI-ATS/assets/91713140/d65f068c-aa2a-4af8-9d67-a686877741f0)
+
+
 ## Contributing
 
 Contributions to IntelliMatch-AI-ATS are welcome! If you'd like to contribute, please follow these steps:
